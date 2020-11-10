@@ -61,6 +61,14 @@ FROM
 */
 
 -- your query here
+SELECT
+ city, population_estimate_2018
+FROM
+ cities
+WHERE
+ city = San Diego
+
+
 
 \echo ========= Problem 3.2 ====================================================
 \echo
