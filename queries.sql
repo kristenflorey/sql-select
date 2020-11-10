@@ -66,7 +66,7 @@ SELECT
 FROM
  cities
 WHERE
- city = San Diego
+ city = 'San Diego';
 
 
 
