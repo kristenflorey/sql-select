@@ -96,6 +96,12 @@ WHERE
 */
 
 -- your query here
+SELECT
+ city, state, population_estimate_2018
+FROM
+ cities
+WHERE
+ population_estimate_2018 BETWEEN 800000 AND 900000;
 
 \echo ========= Problem 3.4 ====================================================
 \echo
