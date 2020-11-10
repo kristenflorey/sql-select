@@ -112,6 +112,13 @@ WHERE
 */
 
 -- your query here
+SELECT 
+city,population_estimate_2018
+FROM
+cities
+WHERE
+population_estimate_2018 > 1000000;
+
 
 \echo ========= Problem 3.5 ====================================================
 \echo
