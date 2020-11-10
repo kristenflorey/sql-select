@@ -31,6 +31,11 @@
 */
 
 -- your query here
+SELECT
+ city, state, population_estimate_2018
+FROM
+ cities;
+
 
 \echo ========= Problem 2.2 ====================================================
 \echo
@@ -40,6 +45,10 @@
 */
 
 -- your query here
+SELECT
+ name
+FROM
+ airports;
 
 ---- Phase 3: Add WHERE clauses ------------------------------------------------
 -- Select specific rows from a table using WHERE and common operators.
