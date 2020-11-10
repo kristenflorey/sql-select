@@ -130,9 +130,13 @@ population_estimate_2018 > 1000000;
 
 -- your query here
 SELECT 
-city,
-FROM 
+city, (population_estimate_2018/1000000),state
+FROM
+cities
 WHERE
+state = 'Texas';
+
+
 
 \echo ========= Problem 3.6 ====================================================
 \echo
