@@ -129,7 +129,7 @@ population_estimate_2018 > 1000000;
 */
 
 -- your query here
-SELECT 
+SELECT
 city, (population_estimate_2018/1000000),state
 FROM
 cities
@@ -153,8 +153,8 @@ state = 'Texas';
 SELECT
 city,population_estimate_2018,state
 FROM
-cities 
-WHERE 
+cities
+WHERE
 state NOT IN ('New York','California','Texas');
 
 \echo ========= Problem 3.7 ====================================================
@@ -167,6 +167,13 @@ state NOT IN ('New York','California','Texas');
 */
 
 -- your query here
+
+SELECT
+ city, state, population_estimate_2018
+FROM
+ cities
+WHERE
+ city LIKE 'S%';
 
 \echo ========= Problem 3.8 ====================================================
 \echo
