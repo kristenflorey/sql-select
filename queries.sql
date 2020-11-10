@@ -80,6 +80,13 @@ WHERE
 
  -- your query here
 
+ SELECT
+  city, population_estimate_2018, state
+FROM
+ cities
+WHERE
+ city IN ('Phoenix', 'Jacksonville', 'Charlotte', 'Nashville');
+
 \echo ========= Problem 3.3 ====================================================
 \echo
 /*
