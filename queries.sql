@@ -112,7 +112,7 @@ WHERE
 */
 
 -- your query here
-SELECT 
+SELECT
 city,population_estimate_2018
 FROM
 cities
