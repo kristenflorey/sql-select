@@ -129,6 +129,10 @@ population_estimate_2018 > 1000000;
 */
 
 -- your query here
+SELECT 
+city,
+FROM 
+WHERE
 
 \echo ========= Problem 3.6 ====================================================
 \echo
