@@ -219,6 +219,12 @@ WHERE
 */
 
 -- your query here
+SELECT
+ city, population_estimate_2018, population_census_2010
+FROM
+ cities
+WHERE
+ population_estimate_2018 >= population_census_2010 + 200000;
 
 ---- Phase 4: Use a JOIN operation ---------------------------------------------
 -- Retrieve rows from multiple tables joining on a foreign key.
@@ -235,6 +241,14 @@ WHERE
 
 -- your query here
 
+SELECT
+ *
+FROM
+ airports
+INNER JOIN cities ON (airports.city_id = cities.id);
+
+
+
 \echo ========= Problem 4.2 ====================================================
 \echo
 /*
@@ -246,6 +260,14 @@ WHERE
 */
 
 -- your query here
+SELECT
+ COUNT(*)
+FROM
+ airports
+INNER JOIN
+ cities ON airports.city_id = cities.id
+WHERE
+city = 'New York';
 
 --------------------------------------------------------------------------------
 ---- Bonuses:
@@ -264,6 +286,12 @@ B.1) Apostrophe: Write a SQL query to get all three ID codes (the Federal
 */
 
 -- your query here
+SELECT
+ faa_id, iata_id, icao_id
+FROM
+ airports
+WHERE
+ name = 'Chicago O''Hare International Airport';
 
 \echo ========= Problem B.2 ====================================================
 \echo
