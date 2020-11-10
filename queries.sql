@@ -150,6 +150,12 @@ state = 'Texas';
 */
 
 -- your query here
+SELECT
+city,population_estimate_2018,state
+FROM
+cities 
+WHERE 
+state NOT IN ('New York','California','Texas');
 
 \echo ========= Problem 3.7 ====================================================
 \echo
