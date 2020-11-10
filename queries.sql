@@ -185,6 +185,12 @@ WHERE
 */
 
 -- your query here
+SELECT
+ city, land_area_sq_mi_2016, population_estimate_2018
+FROM
+ cities
+WHERE
+ population_estimate_2018 > 2000000 AND land_area_sq_mi_2016 > 400;
 
 \echo ========= Problem 3.9 ====================================================
 \echo
@@ -196,6 +202,12 @@ WHERE
 */
 
 -- your query here
+SELECT
+ city, land_area_sq_mi_2016, population_estimate_2018
+FROM
+ cities
+WHERE
+ (land_area_sq_mi_2016 > 400 OR population_estimate_2018 > 2000000) AND NOT (land_area_sq_mi_2016 > 400 AND population_estimate_2018 > 2000000);
 
 \echo ========= Problem 3.10 ===================================================
 \echo
